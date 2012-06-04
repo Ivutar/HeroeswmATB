@@ -4,3 +4,20 @@ obj
 
 # mstest test results
 TestResults
+/Build/Bin.Debug/ATBData.dll
+/Build/Bin.Debug/ATBData.dll.config
+/Build/Bin.Debug/ATBData.pdb
+/Build/Bin.Debug/ATBWin.exe
+/Build/Bin.Debug/ATBWin.exe.config
+/Build/Bin.Debug/ATBWin.pdb
+/Build/Bin.Debug/ATBWin.vshost.exe
+/Build/Bin.Debug/ATBWin.vshost.exe.config
+/Build/Bin.Debug/ATBWin.vshost.exe.manifest
+/Build/Bin.Debug/System.Data.SQLite.Linq.dll
+/Build/Bin.Debug/System.Data.SQLite.Linq.pdb
+/Build/Bin.Debug/System.Data.SQLite.Linq.xml
+/Build/Bin.Debug/System.Data.SQLite.dll
+/Build/Bin.Debug/System.Data.SQLite.pdb
+/Build/Bin.Debug/System.Data.SQLite.xml
+/Build/Bin.Release/ATBWin.vshost.exe
+/Build/Bin.Release/ATBWin.vshost.exe.manifest
