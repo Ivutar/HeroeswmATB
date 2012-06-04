@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATBData", "ATBData\ATBData.csproj", "{3CBA4C3F-CAAB-43DF-A58E-727816D4C9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATBWin", "ATBWin\ATBWin.csproj", "{0CE1D759-0D36-4D7C-ADA4-891096D90F02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{AEF6C0D6-B0A4-401B-B206-C0FE3064AC5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CBA4C3F-CAAB-43DF-A58E-727816D4C9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBA4C3F-CAAB-43DF-A58E-727816D4C9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBA4C3F-CAAB-43DF-A58E-727816D4C9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBA4C3F-CAAB-43DF-A58E-727816D4C9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE1D759-0D36-4D7C-ADA4-891096D90F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE1D759-0D36-4D7C-ADA4-891096D90F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE1D759-0D36-4D7C-ADA4-891096D90F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE1D759-0D36-4D7C-ADA4-891096D90F02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

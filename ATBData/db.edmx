@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="atbModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="atbModelStoreContainer">
+          <EntitySet Name="units" EntityType="atbModel.Store.units" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="units">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" />
+          <Property Name="attack" Type="integer" />
+          <Property Name="defense" Type="integer" />
+          <Property Name="damage_min" Type="integer" />
+          <Property Name="damage_max" Type="integer" />
+          <Property Name="hit_points" Type="integer" />
+          <Property Name="speed" Type="integer" />
+          <Property Name="initiative" Type="decimal" Precision="53" />
+          <Property Name="mana" Type="integer" />
+          <Property Name="morale" Type="integer" />
+          <Property Name="shots" Type="integer" />
+          <Property Name="range" Type="integer" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="atbModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="atbEntities">
+          <EntitySet Name="units" EntityType="atbModel.units" />
+        </EntityContainer>
+        <EntityType Name="units">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="attack" Type="Int64" />
+          <Property Name="defense" Type="Int64" />
+          <Property Name="damage_min" Type="Int64" />
+          <Property Name="damage_max" Type="Int64" />
+          <Property Name="hit_points" Type="Int64" />
+          <Property Name="speed" Type="Int64" />
+          <Property Name="initiative" Type="Decimal" Precision="53" Scale="0" />
+          <Property Name="mana" Type="Int64" />
+          <Property Name="morale" Type="Int64" />
+          <Property Name="shots" Type="Int64" />
+          <Property Name="range" Type="Int64" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="atbModelStoreContainer" CdmEntityContainer="atbEntities">
+          <EntitySetMapping Name="units">
+            <EntityTypeMapping TypeName="IsTypeOf(atbModel.units)">
+              <MappingFragment StoreEntitySet="units">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="attack" ColumnName="attack" />
+                <ScalarProperty Name="defense" ColumnName="defense" />
+                <ScalarProperty Name="damage_min" ColumnName="damage_min" />
+                <ScalarProperty Name="damage_max" ColumnName="damage_max" />
+                <ScalarProperty Name="hit_points" ColumnName="hit_points" />
+                <ScalarProperty Name="speed" ColumnName="speed" />
+                <ScalarProperty Name="initiative" ColumnName="initiative" />
+                <ScalarProperty Name="mana" ColumnName="mana" />
+                <ScalarProperty Name="morale" ColumnName="morale" />
+                <ScalarProperty Name="shots" ColumnName="shots" />
+                <ScalarProperty Name="range" ColumnName="range" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="db">
+        <EntityTypeShape EntityType="atbModel.units" Width="1.5" PointX="0.75" PointY="0.75" Height="3.5186979166666665" IsExpanded="true" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
